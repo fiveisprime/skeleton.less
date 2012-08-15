@@ -12,4 +12,5 @@ _(Nothing yet)_
 
 ## License
 [Skeleton](http://www.getskeleton.com/#licenseandlog) is licensed under the open-source MIT license.
+
 [Less Elements](http://lesselements.com) is not licensed, but _is_ super awesome.
