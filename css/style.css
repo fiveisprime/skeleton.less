@@ -11,27 +11,13 @@
     More info at: http://lesselements.com
 -----------------------------------------------------*/
 /*
-* Skeleton V1.2
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
-*/
-/* Table of Content
-==================================================
-#Reset & Basics
-#Basic Styles
-#Site Styles
-#Typography
-#Links
-#Lists
-#Images
-#Buttons
-#Forms
-#Misc */
-/* #Reset & Basics (Inspired by E. Meyers)
-================================================== */
+ * Skeleton V1.2
+ * Copyright 2011, Dave Gamache
+ * www.getskeleton.com
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 6/20/2012
+ */
 html,
 body,
 div,
@@ -158,8 +144,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* #Basic Styles
-================================================== */
 body {
   background: #ffffff;
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -171,8 +155,6 @@ body {
 
   -webkit-text-size-adjust: 100%;
 }
-/* #Typography
-================================================== */
 h1,
 h2,
 h3,
@@ -276,8 +258,6 @@ hr {
   margin: 10px 0 30px;
   height: 0;
 }
-/* #Links
-================================================== */
 a,
 a:visited {
   color: #333;
@@ -342,14 +322,10 @@ ul.large li {
 li p {
   line-height: 21px;
 }
-/* #Images
-================================================== */
 img.scale-with-grid {
   max-width: 100%;
   height: auto;
 }
-/* #Buttons
-================================================== */
 .button,
 button,
 input[type="submit"],
@@ -424,14 +400,11 @@ input[type="button"].full-width {
   padding-right: 0 !important;
   text-align: center;
 }
-/* Fix for odd Mozilla border & padding issues */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
-/* #Forms
-================================================== */
 form {
   margin-bottom: 20px;
 }
@@ -495,8 +468,6 @@ legend span {
   font-size: 13px;
   color: #444;
 }
-/* #Misc
-================================================== */
 .remove-bottom {
   margin-bottom: 0 !important;
 }
@@ -507,22 +478,13 @@ legend span {
   margin-bottom: 20px !important;
 }
 /*
-* Skeleton V1.2
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
-*/
-/* Table of Contents
-==================================================
-    #Base 960 Grid
-    #Tablet (Portrait)
-    #Mobile (Portrait)
-    #Mobile (Landscape)
-    #Clearing */
-/* #Base 960 Grid
-================================================== */
+ * Skeleton V1.2
+ * Copyright 2011, Dave Gamache
+ * www.getskeleton.com
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 6/20/2012
+ */
 .container {
   position: relative;
   width: 960px;
@@ -650,9 +612,6 @@ legend span {
 .container .offset-by-fifteen {
   padding-left: 900px;
 }
-/* #Tablet (Portrait)
-================================================== */
-/* Note: Design for a width of 768px */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .container {
     width: 768px;
@@ -778,9 +737,6 @@ legend span {
     padding-left: 720px;
   }
 }
-/*  #Mobile (Portrait)
-================================================== */
-/* Note: Design for a width of 320px */
 @media only screen and (max-width: 767px) {
   .container {
     width: 300px;
@@ -829,9 +785,6 @@ legend span {
     padding-left: 0;
   }
 }
-/* #Mobile (Landscape)
-================================================== */
-/* Note: Design for a width of 480px */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     width: 420px;
@@ -862,9 +815,6 @@ legend span {
     width: 420px;
   }
 }
-/* #Clearing
-================================================== */
-/* Self Clearing Goodness */
 .container:after {
   content: "\0020";
   display: block;
@@ -903,25 +853,13 @@ legend span {
   height: 0;
 }
 /*
-* Skeleton V1.2
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
-*/
-/* Table of Content
-==================================================
-	#Site Styles
-	#Page Styles
-	#Media Queries
-	#Font-Face */
-/* #Site Styles
-================================================== */
-/* #Page Styles
-================================================== */
-/* #Media Queries
-================================================== */
+ * Skeleton V1.2
+ * Copyright 2011, Dave Gamache
+ * www.getskeleton.com
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 6/20/2012
+ */
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
   
@@ -942,8 +880,6 @@ legend span {
 @media only screen and (max-width: 479px) {
   
 }
-/* #Font-Face
-================================================== */
 /* 	This is the proper syntax for an @font-face file
 		Just create a "fonts" folder at the root,
 		copy your FontName into code below and remove
