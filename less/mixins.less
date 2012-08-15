@@ -65,6 +65,10 @@
               border-top-left-radius: @topleft;
   -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
 }
+.font-smoothing() {
+  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
+}
 .opacity(@opacity: 0.5) {
   -webkit-opacity: @opacity;
      -moz-opacity: @opacity;
@@ -76,22 +80,22 @@
      -moz-transition-duration: @duration;
           transition-duration: @duration;
 }
-.rotation(@deg:5deg){
+.rotation(@deg: 5deg){
   -webkit-transform: rotate(@deg);
      -moz-transform: rotate(@deg);
           transform: rotate(@deg);
 }
-.scale(@ratio:1.5){
+.scale(@ratio: 1.5){
   -webkit-transform: scale(@ratio);
      -moz-transform: scale(@ratio);
           transform: scale(@ratio);
 }
-.transition(@duration:0.2s, @ease:ease-out) {
+.transition(@duration: 0.2s, @ease: ease-out) {
   -webkit-transition: all @duration @ease;
      -moz-transition: all @duration @ease;
           transition: all @duration @ease;
 }
-.inner-shadow(@horizontal:0, @vertical:1px, @blur:2px, @alpha: 0.4) {
+.inner-shadow(@horizontal: 0, @vertical: 1px, @blur: 2px, @alpha: 0.4) {
   -webkit-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
      -moz-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
           box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);

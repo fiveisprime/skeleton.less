@@ -28,46 +28,57 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 blockquote, q {
-  quotes: none; }
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
+  quotes: none;
+  &:before {
+    content: '';
+    content: none;
+  }
+  &:after{
+    content: '';
+    content: none;
+  }
+}
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 /* #Basic Styles
 ================================================== */
 body {
-  background: #fff;
-  font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #444;
-  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
-  -webkit-text-size-adjust: 100%;
+  background: @bodyBackground;
+  font-family: @bodyFontFamily;
+  font-size: @bodyFontSize;
+  font-weight: @bodyFontWeight;
+  color: @bodyColor;
+  .font-smoothing();
 }
 
 /* #Typography
 ================================================== */
 h1, h2, h3, h4, h5, h6 {
-  color: #181818;
-  font-family: "Georgia", "Times New Roman", serif;
-  font-weight: normal; }
+  color: @headerColor;
+  font-family: @headerFontFamily;
+  font-weight: @headerFontWeight; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
-h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
-h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
-h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
-h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
-h5 { font-size: 17px; line-height: 24px; }
-h6 { font-size: 14px; line-height: 21px; }
+h1 { font-size: @h1FontSize; line-height: @h1LineHeight; margin-bottom: @h1MarginBottom; }
+h2 { font-size: @h2FontSize; line-height: @h2LineHeight; margin-bottom: @h2MarginBottom; }
+h3 { font-size: @h3FontSize; line-height: @h3LineHeight; margin-bottom: @h3MarginBottom; }
+h4 { font-size: @h4FontSize; line-height: @h4LineHeight; margin-bottom: @h4MarginBottom; }
+h5 { font-size: @h5FontSize; line-height: @h5LineHeight; }
+h6 { font-size: @h6FontSize; line-height: @h6LineHeight; }
 .subheader { color: #777; }
 
 p { margin: 0 0 20px 0; }
@@ -81,8 +92,10 @@ small { font-size: 80%; }
 /*  Blockquotes  */
 blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
 blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
-blockquote cite { display: block; font-size: 12px; color: #555; }
-blockquote cite:before { content: "\2014 \0020"; }
+blockquote cite {
+  display: block; font-size: 12px; color: #555;
+  &:before { content: "\2014 \0020"; }
+}
 blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
 
 hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
@@ -142,38 +155,23 @@ input[type="button"] {
   line-height: normal;
   padding: 8px 10px;
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover {
-  color: #222;
-  .gradient(#ddd, rgba(255,255,255,.3), rgba(0,0,0,.3));
-  border: 1px solid #888;
-  border-top: 1px solid #aaa;
-  border-left: 1px solid #aaa;
-}
-
-.button:active,
-button:active,
-input[type="submit"]:active,
-input[type="reset"]:active,
-input[type="button"]:active {
-  border: 1px solid #666;
-  .gradient(#ccc, rgba(255,255,255,.35), rgba(0,0,0,.4));
-}
-
-.button.full-width,
-button.full-width,
-input[type="submit"].full-width,
-input[type="reset"].full-width,
-input[type="button"].full-width {
-  width: 100%;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  text-align: center;
+  &:hover {
+    color: #222;
+    .gradient(#ddd, rgba(255,255,255,.3), rgba(0,0,0,.3));
+    border: 1px solid #888;
+    border-top: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+  }
+  &:active {
+    border: 1px solid #666;
+    .gradient(#ccc, rgba(255,255,255,.35), rgba(0,0,0,.4));
+  }
+  &.full-width {
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: center;
+  }
 }
 
 /* Fix for odd Mozilla border & padding issues */

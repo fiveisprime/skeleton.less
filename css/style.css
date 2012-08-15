@@ -145,8 +145,11 @@ q {
   quotes: none;
 }
 blockquote:before,
+q:before {
+  content: '';
+  content: none;
+}
 blockquote:after,
-q:before,
 q:after {
   content: '';
   content: none;
@@ -158,9 +161,11 @@ table {
 /* #Basic Styles
 ================================================== */
 body {
-  background: #fff;
-  font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #444;
+  background: #ffffff;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 21px;
+  color: #444444;
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
 
