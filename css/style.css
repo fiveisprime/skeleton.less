@@ -880,10 +880,6 @@ or wrap each row of columns in a <div class="row"> */
 @media only screen and (max-width: 479px) {
   
 }
-/*  This is the proper syntax for an @font-face file
-    Just create a "fonts" folder at the root,
-    copy your FontName into code below and remove
-    comment brackets */
 /*  @font-face {
       font-family: 'FontName';
       src: url('../fonts/FontName.eot');
