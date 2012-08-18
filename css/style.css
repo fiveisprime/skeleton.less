@@ -260,13 +260,13 @@ hr {
 }
 a,
 a:visited {
-  color: #333;
+  color: #333333;
   text-decoration: underline;
   outline: 0;
 }
 a:hover,
 a:focus {
-  color: #000;
+  color: #000000;
 }
 p a,
 p a:visited {
