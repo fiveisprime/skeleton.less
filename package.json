@@ -1,0 +1,24 @@
+{
+  "author": "Matt Hernandez",
+  "name": "skeleton-less",
+  "description": "A starting point for building responsive websites using less.",
+  "version": "0.0.1",
+  "private": true,
+  "homepage": "",
+  "node": "0.8.1",
+  "author": {
+    "name": "Matt Hernandez",
+    "email": "matt@eventargs.com",
+    "url": "http://eventargs.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fiveisprime/skeleton.less"
+  },
+  "dependencies": {
+    "grunt": "latest",
+    "grunt-less": "latest"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {}
+}
