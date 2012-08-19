@@ -14,6 +14,9 @@ CSS, run `grunt` in terminal to run the grunt task.
 The grunt watch task is configured to run grunt-less so you may also run `grunt watch` then
 go about your business without having to worry about having the latest compiled CSS.
 
+It is also possible to compress the output of the compiled CSS by setting `compress` to
+`true` in `base` less task in `grunt.js`.
+
 ## Contributing
 In lieu of a formal style guide, take care to maintain the existing coding style. Please don't
 make any changes directly to the `css` directory as `style.css` is generated from the less and

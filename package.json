@@ -4,7 +4,7 @@
   "description": "A starting point for building responsive websites using less.",
   "version": "0.0.1",
   "private": true,
-  "homepage": "",
+  "homepage": "git://github.com/fiveisprime/skeleton.less",
   "node": "0.8.1",
   "author": {
     "name": "Matt Hernandez",
