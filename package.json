@@ -16,9 +16,10 @@
     "url": "git://github.com/fiveisprime/skeleton.less"
   },
   "dependencies": {
-    "grunt": "latest",
     "grunt-less": "latest"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt": "latest"
+  },
   "optionalDependencies": {}
 }
