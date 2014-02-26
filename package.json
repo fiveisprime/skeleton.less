@@ -5,7 +5,6 @@
   "version": "0.0.1",
   "private": true,
   "homepage": "git://github.com/fiveisprime/skeleton.less",
-  "node": "0.8.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/fiveisprime/skeleton.less"
