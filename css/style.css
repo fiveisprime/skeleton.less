@@ -1,15 +1,9 @@
 /*---------------------------------------------------
-    LESS Elements 0.6
+    LESS Elements 0.9
   ---------------------------------------------------
-    A set of useful LESS mixins by Dmitry Fadeyev
-    Special thanks for mixin suggestions to:
-      Kris Van Herzeele,
-      Benoit Adam,
-      Portenart Emile-Victor,
-      Ryan Faerman
-
+    A set of useful LESS mixins
     More info at: http://lesselements.com
------------------------------------------------------*/
+  ---------------------------------------------------*/
 /*
  * Skeleton V1.2
  * Copyright 2011, Dave Gamache
@@ -151,7 +145,7 @@ body {
   font-weight: 400;
   color: #444444;
   -webkit-font-smoothing: antialiased;
-  /* Fix for webkit rendering */
+  -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
 h1,
@@ -334,22 +328,24 @@ input[type="button"] {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(255, 255, 255, 0.2)), color-stop(1, rgba(0, 0, 0, 0.2)));
   background: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
   background: -moz-linear-gradient(center bottom, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.2));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0, 0, 0, 0.2)', endColorstr='rgba(255, 255, 255, 0.2)', GradientType=0);
   border: 1px solid #aaa;
   border-top: 1px solid #ccc;
   border-left: 1px solid #ccc;
   -webkit-border-top-right-radius: 3px;
-  -moz-border-radius-topright: 3px;
-  border-top-right-radius: 3px;
   -webkit-border-bottom-right-radius: 3px;
-  -moz-border-radius-bottomright: 3px;
-  border-bottom-right-radius: 3px;
   -webkit-border-bottom-left-radius: 3px;
-  -moz-border-radius-bottomleft: 3px;
-  border-bottom-left-radius: 3px;
   -webkit-border-top-left-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
   -moz-border-radius-topleft: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
-  -moz-background-clip: padding;
+  -moz-background-clip: padding-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   color: #444;
@@ -374,6 +370,8 @@ input[type="button"]:hover {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(255, 255, 255, 0.3)), color-stop(1, rgba(0, 0, 0, 0.3)));
   background: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3));
   background: -moz-linear-gradient(center bottom, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0, 0, 0, 0.3)', endColorstr='rgba(255, 255, 255, 0.3)', GradientType=0);
   border: 1px solid #888;
   border-top: 1px solid #aaa;
   border-left: 1px solid #aaa;
@@ -388,6 +386,8 @@ input[type="button"]:active {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(255, 255, 255, 0.35)), color-stop(1, rgba(0, 0, 0, 0.4)));
   background: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0.35), rgba(0, 0, 0, 0.4));
   background: -moz-linear-gradient(center bottom, rgba(255, 255, 255, 0.35) 0%, rgba(0, 0, 0, 0.4) 100%);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.35));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0, 0, 0, 0.4)', endColorstr='rgba(255, 255, 255, 0.35)', GradientType=0);
 }
 .button.full-width,
 button.full-width,
@@ -421,9 +421,6 @@ select {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #777;
   margin: 0;
